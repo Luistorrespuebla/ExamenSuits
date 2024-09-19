@@ -14,9 +14,9 @@ if ($_POST) {
         isset($_POST['pass']) && !empty($_POST['pass'])) {
 
         if(is_numeric($_POST['nombre'])) {
-            echo "<script>alert('No puedes agregar numeros en el input nombre');</script>";
+            echo "<script>alert('No puedes agregar números en un nombre');</script>";
         } else if(is_numeric($_POST['apellido'])) {
-            echo "<script>alert('No puedes agregar numeros en el input apellido');</script>";
+            echo "<script>alert('No puedes agregar números en un apellido');</script>";
         } else {
             if (preg_match($validacionEmail,$_POST['email'])) {
                 echo "<script>alert('CORRECTO');</script>";
