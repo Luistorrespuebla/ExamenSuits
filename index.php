@@ -18,9 +18,9 @@ require_once("./app/controller/inicio.php");
     <div class="row">
         <div class="col"></div>
         <div class="col mt-5 p-5 c-datos">
-            <h1 class="text-center text-white mb-5">Bienvenido a la tienda Telcel <i class="bi bi-emoji-sunglasses-fill"></i></h1>
-            <h2 class="text-center text-white"><?= $_SESSION['registro']['nombre']." ".$_SESSION['registro']['apellido'];?> </h2>
-            <p class="text-center text-white fs-4 mb-4"><?= $_SESSION['registro']['email'] ?></p> 
+            <h1 class="text-center text-black mb-5">Bienvenido a la tienda Telcel <i class="bi bi-emoji-sunglasses-fill"></i></h1>
+            <h2 class="text-center text-black"><?= $_SESSION['registro']['nombre']." ".$_SESSION['registro']['apellido'];?> </h2>
+            <p class="text-center text-black fs-4 mb-4"><?= $_SESSION['registro']['email'] ?></p> 
             <div class="d-flex justify-content-center">
                 <a href="./cerrar_sesion.php" class="btn btn-danger">Cerrar sesion</a>
             </div>
