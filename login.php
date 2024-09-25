@@ -1,6 +1,11 @@
 <?php 
 require_once "./app/config/dependencias.php";
-require_once "./app/controller/login.php";
+
+session_start();
+
+if(isset($_SESSION['usuario'])) {
+    header("location: ./index.php");
+}
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +15,6 @@ require_once "./app/controller/login.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?=CSS."bootstrap.min.css";?>">
     <link rel="stylesheet" href="<?=JS."bootstrap.bundle.min.js";?>">
-    <link rel="stylesheet" href="<?=ICONS."bootstrap-icons.css";?>">
     <link rel="stylesheet" href="<?=CSS."main.css";?>">
     <title>Iniciar Sesión</title>
 </head>
@@ -42,7 +46,7 @@ require_once "./app/controller/login.php";
                 </div>
 
                 <div class="d-grid gap-2 mt-4">
-                    <button type="submit" class="btn btn-primary btn-lg">Ingresar</button>
+                    <button type="button" class="btn btn-primary btn-lg" id='btn-magico'>Ingresar</button>
                 </div>
             </form>
 
@@ -51,5 +55,6 @@ require_once "./app/controller/login.php";
             </div>
         </div>
     </div>
+    <script src="./public/js/main.js"></script>
 </body>
 </html>
