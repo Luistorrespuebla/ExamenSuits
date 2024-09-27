@@ -33,7 +33,8 @@ if(isset($_SESSION['usuario'])) {
                     <label for="email" class="form-label">Correo Electrónico</label>
                     <div class="input-group">
                         <span class="input-group-text bg-light border-0"><i class="bi bi-person-fill"></i></span>
-                        <input type="email" class="form-control" placeholder="Ingrese su email" id="email" name="email" value="<?= (!empty($_POST['email'])) ? $_POST['email'] : ''; ?>" required>
+                        <input type="email" class="form-control" placeholder="Ingrese su email" id="email" name="email" 
+                        value="<?= (!empty($_POST['email'])) ? $_POST['email'] : ''; ?>" required>
                     </div>
                 </div>
 
@@ -41,7 +42,8 @@ if(isset($_SESSION['usuario'])) {
                     <label for="pass" class="form-label">Contraseña</label>
                     <div class="input-group">
                         <span class="input-group-text bg-light border-0"><i class="bi bi-lock-fill"></i></span>
-                        <input type="password" class="form-control" placeholder="Ingrese su contraseña" id="pass" name="pass" value="<?= (!empty($_POST['pass'])) ? $_POST['pass'] : ''; ?>" required>
+                        <input type="password" class="form-control" placeholder="Ingrese su contraseña" id="pass" name="pass" 
+                        value="<?= (!empty($_POST['pass'])) ? $_POST['pass'] : ''; ?>" required>
                     </div>
                 </div>
 
